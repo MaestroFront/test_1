@@ -1,0 +1,94 @@
+body {
+    background-color: rgba(129, 224, 215, 0.5);
+    padding: 10px;
+}
+
+.button {
+    width: 100px;
+    height: 50px;
+    border: 1px solid teal;
+    border-radius: 10px;
+    background-color: rgba(64, 224, 208, 0.2);
+    transition-duration: 1s;
+}
+
+.button {
+    &:hover {
+        background-color: rgba(64, 224, 208, 1);
+        transform: scale(1.1);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+        transition-duration: 1s;
+    }
+}
+
+.todo {
+    &__list {
+        margin: 20px 0px 10px 0px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        // margin-right: 5px;
+    }
+}
+
+.todo__item {
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    margin-right: 10px;
+}
+
+.button__delete {
+    margin: 0px 10px;
+}
+
+.button__add {
+    margin: 0px 10px;
+}
+
+.work {
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    height: 50px;
+    padding: 10px;
+    border: 1px solid rgba(0, 128, 128, 0.3);
+    background-color: transparent;
+    border-radius: 10px;
+
+    &__task {
+        margin-right: 10px;
+    }
+}
+
+.button__cross {
+    position: relative;
+    left: -25px;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 0px;
+        width: 10px;
+        height: 1px;
+        background-color: black;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}

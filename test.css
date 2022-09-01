@@ -1,0 +1,78 @@
+body {
+  background-color: rgba(129, 224, 215, 0.5);
+  padding: 10px;
+}
+
+.button {
+  width: 100px;
+  height: 50px;
+  border: 1px solid teal;
+  border-radius: 10px;
+  background-color: rgba(64, 224, 208, 0.2);
+  transition-duration: 1s;
+}
+
+.button:hover {
+  background-color: rgb(64, 224, 208);
+  transform: scale(1.1);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  transition-duration: 1s;
+}
+
+.todo__list {
+  margin: 20px 0px 10px 0px;
+}
+.todo__item {
+  display: flex;
+  align-items: center;
+}
+.todo__item {
+  margin-right: 10px;
+}
+.todo__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.button__delete {
+  margin: 0px 10px;
+}
+
+.button__add {
+  margin: 0px 10px;
+}
+
+.work {
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  height: 50px;
+  padding: 10px;
+  border: 1px solid rgba(0, 128, 128, 0.3);
+  background-color: transparent;
+  border-radius: 10px;
+}
+.input__task {
+  margin-right: 10px;
+}
+
+.button__cross {
+  position: relative;
+  left: -25px;
+}
+.button__cross::before, .button__cross::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  width: 10px;
+  height: 1px;
+  background-color: black;
+}
+.button__cross::before {
+  transform: rotate(45deg);
+}
+.button__cross::after {
+  transform: rotate(-45deg);
+}/*# sourceMappingURL=test.css.map */
